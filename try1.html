@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    let car = {
+        model: 'ford',
+        year: 2015,
+        color: 'red',
+        speed: () => {
+            return this.year;
+        }
+    }
+
+    console.log("" + car.speed());
+
+</script>

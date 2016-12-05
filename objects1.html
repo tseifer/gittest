@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let contact = {
+        name: 'lala',
+        family: 'thewho',
+        married: false,
+        address: {
+            city: 'tel aviv',
+            street: 'ben yehuda',
+            number: 23
+        },
+        phone: '054-543654',
+        changeStreetNumber: function(a) {
+            this.address.number = a;
+        }
+    };
+    console.log('family: ' + contact['family']);
+    console.log('married: ' + contact.married);
+    console.log('address-city: ' + contact.address.city);
+    contact.changeStreetNumber(100);
+    console.log('number ' + contact.address.number);
+
+
+</script>
